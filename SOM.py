@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 16 14:39:00 2022
-
-@author: ltmat
-"""
+#Code utilized and adapted from Ken Moriwaki
 
 import numpy as np
 import pandas as pd
@@ -18,7 +13,7 @@ from matplotlib import animation, colors
 
 
 
-x = pd.read_excel('C:\\Users\ltmat\Documents\Logan\School\MSU\Thesis\Data\ETL Data\Demographics 1.xlsx')
+x = pd.read_excel('C:\\Users\\Demographics 1.xlsx')
 y = np.array(x['Food_Sufficient'])
 
 x_train, x_test, y_train, y_test = train_test_split(x,y, test_size = 0.2, random_state = 4563)
@@ -60,11 +55,12 @@ def decay(step, max_steps,max_learning_rate,max_m_dsitance):
 
 
 # hyperparameters
-num_rows = 10
-num_cols = 10
+num_rows = 50
+num_cols = 50
+
 max_m_dsitance = 4
 max_learning_rate = 0.5
-max_steps = int(7.5*10e3)
+max_steps = int(75000)
 
 # num_nurons = 5*np.sqrt(train_x.shape[0])
 # grid_size = ceil(np.sqrt(num_nurons))

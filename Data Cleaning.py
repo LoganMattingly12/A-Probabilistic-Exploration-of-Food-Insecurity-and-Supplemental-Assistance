@@ -6,7 +6,7 @@ Created on Sat Nov 19 21:54:59 2022
 """
 import pandas as pd
 
-X = pd.read_excel('C:\\Users\\ltmat\\Documents\\Logan\\School\\MSU\\Thesis\\Data\\faps_household_remanedxlsx.xlsx')
+X = pd.read_excel('C:\\Users\\faps_household_remanedxlsx.xlsx')
 data = pd.DataFrame()
 data = X.iloc[:,0:260].replace(to_replace=(-996,-997,-998,-999,'.'),value=(0,0,0,0,0))
 

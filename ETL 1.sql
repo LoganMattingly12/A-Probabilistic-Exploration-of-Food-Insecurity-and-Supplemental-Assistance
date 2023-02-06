@@ -1,4 +1,3 @@
-USE [Thesis Data]
 
 --02/03/2023--
 

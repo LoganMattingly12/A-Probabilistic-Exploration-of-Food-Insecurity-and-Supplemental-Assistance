@@ -98,3 +98,8 @@ SELECT household_num, Income_avg_mon, household_poverty_guideline
 FROM Household_DataSO
 WHERE Cluster = 2
 
+SELECT household_num, Income_avg_mon, household_poverty_guideline
+FROM Household_DataSO
+WHERE Cluster = 3
+
+
